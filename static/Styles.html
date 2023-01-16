@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="generator" content="TiddlyWiki" />
+<meta name="tiddlywiki-version" content="5.2.5" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no">
+<link id="faviconLink" rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="static.css">
+<title>Styles: Learning Hub — collected notes</title>
+</head>
+<body class="tc-body">
+
+<section class="tc-story-river tc-static-story-river">
+<p><div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists  tc-tagged-%24%3A%2Ftags%2FStylesheet" data-tags="$:/tags/Stylesheet" data-tiddler-title="Styles" role="article"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><button aria-expanded="false" aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"></button><div class=" tc-reveal" hidden="true"></div><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span><h2 class="tc-title">Styles</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class="tc-reveal"></div><div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href=".html"></a> 15th January 2023 at 9:37pm</div></div><div class=" tc-reveal"><div class="tc-tags-wrapper"><span class="tc-tag-list-item" data-tag-title="$:/tags/Stylesheet"><span aria-expanded="false" class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
+fill:#333333;
+color:#333333;">$:/tags/Stylesheet</span><span class="tc-drop-down tc-reveal" hidden="true"></span></span></div></div><div class="tc-tiddler-body tc-reveal"><p><pre class="hljs"><code class="css hljs"><span class="hljs-selector-class">.center</span> {
+	<span class="hljs-attribute">display</span>: flex;
+	<span class="hljs-attribute">justify-content</span>: center;
+}
+
+<span class="hljs-selector-class">.left</span> {
+	<span class="hljs-attribute">display</span>: flex;
+	<span class="hljs-attribute">justify-content</span>: start;
+}
+
+<span class="hljs-selector-class">.left</span> + <span class="hljs-selector-class">.left</span> {
+	<span class="hljs-attribute">padding-top</span>: .<span class="hljs-number">5em</span>;
+}
+
+<span class="hljs-selector-class">.left</span>&gt;<span class="hljs-selector-class">.sentence</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#fee2e2</span>;
+	<span class="hljs-attribute">border-top-right-radius</span>: <span class="hljs-number">0.5rem</span>;
+	<span class="hljs-attribute">border-bottom-right-radius</span>: <span class="hljs-number">0.5rem</span>;
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">0.5em</span>;
+}
+
+<span class="hljs-selector-class">.right</span> {
+	<span class="hljs-attribute">display</span>: flex;
+	<span class="hljs-attribute">justify-content</span>: end;
+	<span class="hljs-attribute">text-align</span>: end;
+}
+
+<span class="hljs-selector-class">.right</span> + <span class="hljs-selector-class">.right</span> {
+	<span class="hljs-attribute">padding-top</span>: .<span class="hljs-number">5em</span>;
+}
+
+<span class="hljs-selector-class">.right</span>&gt;<span class="hljs-selector-class">.sentence</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#bae6fd</span>;
+	<span class="hljs-attribute">border-top-left-radius</span>: <span class="hljs-number">0.5rem</span>;
+	<span class="hljs-attribute">border-bottom-left-radius</span>: <span class="hljs-number">0.5rem</span>;
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">0.5em</span>;
+}
+
+<span class="hljs-selector-class">.left-speaker</span> {
+	<span class="hljs-attribute">font-weight</span>: bold;
+	<span class="hljs-attribute">color</span>: <span class="hljs-number">#dc2626</span>;
+	<span class="hljs-attribute">padding</span>: .<span class="hljs-number">25em</span>;
+	<span class="hljs-attribute">padding-top</span>: .<span class="hljs-number">1em</span>;
+	<span class="hljs-attribute">padding-bottom</span>: .<span class="hljs-number">1em</span>;
+	<span class="hljs-attribute">margin-left</span>: .<span class="hljs-number">3em</span>;
+	<span class="hljs-attribute">margin-right</span>: .<span class="hljs-number">3em</span>;
+	<span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#dc2626</span>;
+	<span class="hljs-attribute">border-radius</span>: <span class="hljs-number">1em</span>;
+}
+
+<span class="hljs-selector-class">.right-speaker</span> {
+	<span class="hljs-attribute">font-weight</span>: bold;
+	<span class="hljs-attribute">color</span>: <span class="hljs-number">#0284c7</span>;
+	<span class="hljs-attribute">padding</span>: .<span class="hljs-number">25em</span>;
+	<span class="hljs-attribute">padding-top</span>: .<span class="hljs-number">1em</span>;
+	<span class="hljs-attribute">padding-bottom</span>: .<span class="hljs-number">1em</span>;
+	<span class="hljs-attribute">margin-left</span>: .<span class="hljs-number">3em</span>;
+	<span class="hljs-attribute">margin-right</span>: .<span class="hljs-number">3em</span>;
+	<span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#0284c7</span>;
+	<span class="hljs-attribute">border-radius</span>: <span class="hljs-number">1em</span>;
+}
+
+<span class="hljs-selector-class">.sentence</span> {
+}
+
+<span class="hljs-selector-class">.explanation</span> <span class="hljs-selector-class">.target</span> {
+	<span class="hljs-attribute">display</span>: inline-flex;
+}
+
+<span class="hljs-selector-class">.explanation</span> <span class="hljs-selector-tag">p</span> * {
+	<span class="hljs-attribute">vertical-align</span>: bottom;
+}
+
+<span class="hljs-selector-class">.target</span> {
+    <span class="hljs-attribute">display</span>: flex;
+    <span class="hljs-attribute">align-items</span>: end;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.25em</span>;
+}
+
+<span class="hljs-selector-class">.source</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#505050</span>;
+    <span class="hljs-attribute">font-style</span>: italic;
+}
+
+<span class="hljs-selector-class">.base</span> {
+    <span class="hljs-attribute">display</span>: inline-flex;
+    <span class="hljs-attribute">flex-direction</span>: column-reverse;
+    <span class="hljs-attribute">align-items</span>: center;
+}
+
+<span class="hljs-selector-class">.script</span>, <span class="hljs-selector-class">.sound</span> {
+    <span class="hljs-attribute">display</span>: inline-block;
+}
+
+<span class="hljs-selector-class">.script</span> {
+    <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.1em</span>;
+}
+
+<span class="hljs-selector-class">.sound</span> {
+    <span class="hljs-attribute">font-size</span>: .<span class="hljs-number">65em</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#606060</span>;
+}
+
+<span class="hljs-selector-class">.dialogue</span> {
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">1em</span>;
+	<span class="hljs-attribute">border-radius</span>: .<span class="hljs-number">5rem</span>;
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f9f9f9</span>;
+	<span class="hljs-attribute">margin-bottom</span>: .<span class="hljs-number">5em</span>;
+}
+
+<span class="hljs-selector-class">.dialogue</span><span class="hljs-selector-pseudo">:last-child</span> {
+	<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-selector-class">.dialogue-title</span> {
+	<span class="hljs-attribute">font-weight</span>: bold;
+}
+
+<span class="hljs-selector-class">.dialogue-details</span> {
+	<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">1em</span>;
+}
+
+<span class="hljs-selector-class">.dialogue-details</span> <span class="hljs-selector-class">.left</span> {
+	<span class="hljs-attribute">padding-top</span>: .<span class="hljs-number">5em</span>;
+}
+
+<span class="hljs-selector-class">.dialogue-details</span> <span class="hljs-selector-class">.right</span> {
+	<span class="hljs-attribute">padding-top</span>: .<span class="hljs-number">5em</span>;
+}
+
+<span class="hljs-selector-class">.explanation</span> + <span class="hljs-selector-class">.left</span> {
+	<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">0</span>;
+}</code></pre></p></div>
+</div></p>
+</section>
+</body>
+</html>
+
